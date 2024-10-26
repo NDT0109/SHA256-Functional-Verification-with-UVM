@@ -23,16 +23,8 @@ class single_value_test extends uvm_test;
       test_msgs.start(env_e0.msg_a0.s0);
       end
       `uvm_info("TEST", "TEST IS RUNNING!!!", UVM_LOW)
-        //#100us phase.drop_objection(this);
-
-	//66clk period for last objection
-	//#1300;
-	
-
 	phase.drop_objection(this);
       `uvm_info("TEST", "Simulation will finish now", UVM_LOW)
-      //$finish;
-
    endtask
 
 endclass
